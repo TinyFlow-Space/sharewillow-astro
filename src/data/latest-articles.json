@@ -1,6 +1,6 @@
 [
   {
-    "image": "./src/assets/hvac-installer-bonus-hero.png",
+    "image": "../assets/hvac-installer-bonus-hero.png",
     "title": "\n                    HVAC Installer Bonus: How One Company Set $300 to $1,000\n                    Awards by Job Type Before Its First Payout\n                  ",
     "summary": "\n                    HVAC installer bonus plan: one company pays $300 to $1,000\n                    per install by job type, minus labor, split by hours, and\n                    cut its upsell rate from 6% to 3%.\n                  ",
     "date": "\n                      10/5/26\n                    ",
@@ -8,7 +8,7 @@
     "href": "./blog-details.html"
   },
   {
-    "image": "./src/assets/install-commission-split-fix-hero.png",
+    "image": "../assets/install-commission-split-fix-hero.png",
     "title": "\n                    The Install Split That Almost Paid Zero\n                  ",
     "summary": "\n                    A two-location HVAC and plumbing company built its\n                    install-crew bonus pool around ServiceTitan job data, until\n                    a routine check showed one of its busiest pools calculating\n                    out to a flat zero. The technicians hadn't stopped earning\n                    it. The software just had no idea how to split a job between\n                    two installers.\n                  ",
     "date": "\n                      9/7/26\n                    ",
@@ -16,7 +16,7 @@
     "href": "./blog-details.html"
   },
   {
-    "image": "./src/assets/lead-generation-bonus-hero.png",
+    "image": "../assets/lead-generation-bonus-hero.png",
     "title": "\n                    Technician Lead Generation Bonus: How an HVAC and Plumbing\n                    Company Found $52K in Tech-Sourced Sales Its Report Showed\n                    as Zero\n                  ",
     "summary": "\n                    A technician lead generation bonus paid 3% on tech-sourced\n                    leads, but the report showed zero. See how one HVAC and\n                    plumbing company found about $52K.\n                  ",
     "date": "\n                      10/4/26\n                    ",

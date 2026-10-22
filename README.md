@@ -44,7 +44,7 @@ src/
     blog.js                 Mobile filter drawer
   integrations/animation.js npm imports for GSAP, ScrollTrigger, and Lenis
   styles/global.css         Original Tailwind theme and custom CSS
-public/src/assets/          All 54 original assets, unchanged
+public./assets/          All 54 original assets, unchanged
 tests/parity.mjs           Original-versus-production browser comparison
 ```
 
