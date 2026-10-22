@@ -11,9 +11,11 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "astro": "astro",
-    "test:parity": "node tests/parity.mjs"
+    "test:parity": "node tests/parity.mjs",
+    "generate-types": "wrangler types"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^14.4.2",
     "@lottiefiles/lottie-player": "2.0.12",
     "@tailwindcss/vite": "4.3.3",
     "astro": "7.4.2",
@@ -27,6 +29,7 @@
   },
   "devDependencies": {
     "prettier": "^3.9.10",
-    "prettier-plugin-astro": "^1.1.1"
+    "prettier-plugin-astro": "^1.1.1",
+    "wrangler": "^4.151.3"
   }
 }

@@ -1,0 +1,22 @@
+---
+export const prerender = false;
+
+import SiteLayout from "@/layouts/SiteLayout.astro";
+import Metadata from "@/components/metadata/blog-details.astro";
+import CallToAction from "@/components/CallToAction.astro";
+import ArticleHero from "@/components/blog/ArticleHero.astro";
+import ArticleBody from "@/components/blog/ArticleBody.astro";
+import RelatedArticles from "@/components/blog/RelatedArticles.astro";
+---
+
+<SiteLayout page="blog-details">
+  <Metadata slot="head" />
+
+  <ArticleHero />
+  <ArticleBody />
+  <RelatedArticles />
+  <CallToAction />
+</SiteLayout>
+<script>
+  import "@/scripts/entries/article.js";
+</script>
