@@ -1,0 +1,55 @@
+---
+interface Props { image: string; title: string; summary: string; date: string; label: string; href: string; }
+const { image, title, summary, date, label, href } = Astro.props;
+---
+<article class="group relative overflow-hidden">
+                <figure
+                  class="tablet:mb-10 mb-8 overflow-hidden rounded-[1.25rem]"
+                >
+                  <img
+                    src={image}
+                    alt=""
+                  />
+                </figure>
+                <div>
+                  <h3
+                    class="tablet:mb-[2.375rem] mb-4 leading-[1.2] tracking-[-.0525rem] font-heading font-medium tablet:text-[26px] text-2xl line-clamp-2 overflow-hidden"
+                  >{title}</h3>
+                  <p
+                    class="line-clamp-2 overflow-hidden leading-[1.2] tracking-[-.0525rem] tablet:text-[1.325rem] text-[0.875rem] text-brand-espresso-300 mb-8 max-sm:mb-4"
+                  >{summary}</p>
+                  <div class="flex flex-col gap-3">
+                    <div
+                      class="flex items-center gap-2 font-medium text-2xl text-[#180600] group-hover:text-[#746a66]"
+                    >
+                      <div
+                        class="w-6 h-6 flex items-center justify-center rounded-full bg-black text-brand-ivory group-hover:bg-[#746a66]"
+                      >
+                        <svg
+                          width=".75rem"
+                          viewBox="0 0 19 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.3294 10.4129L11.0794 15.6629C10.9699 15.7723 10.8215 15.8338 10.6667 15.8338C10.5119 15.8338 10.3634 15.7723 10.254 15.6629C10.1445 15.5534 10.083 15.405 10.083 15.2502C10.083 15.0954 10.1445 14.9469 10.254 14.8375L14.5086 10.5835H3.08333C2.92862 10.5835 2.78025 10.522 2.67085 10.4126C2.56146 10.3032 2.5 10.1549 2.5 10.0002C2.5 9.84545 2.56146 9.69708 2.67085 9.58768C2.78025 9.47829 2.92862 9.41683 3.08333 9.41683H14.5086L10.254 5.16287C10.1445 5.05341 10.083 4.90496 10.083 4.75016C10.083 4.59537 10.1445 4.44691 10.254 4.33745C10.3634 4.228 10.5119 4.1665 10.6667 4.1665C10.8215 4.1665 10.9699 4.228 11.0794 4.33745L16.3294 9.58745C16.3836 9.64163 16.4266 9.70596 16.456 9.77678C16.4854 9.8476 16.5005 9.9235 16.5005 10.0002C16.5005 10.0768 16.4854 10.1527 16.456 10.2235C16.4266 10.2944 16.3836 10.3587 16.3294 10.4129Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                      <span class="text-[0.937rem]">Continue reading</span>
+                    </div>
+                    <p
+                      class="text-[.875rem] leading-[1.2] tracking-[-.0525rem] uppercase text-brand-espresso-300"
+                    >{date}</p>
+                  </div>
+                </div>
+                <a
+                  class="after:absolute after:inset-0"
+                  href={href}
+                >
+                  <span class="sr-only"
+                    >{label}</span
+                  >
+                </a>
+              </article>

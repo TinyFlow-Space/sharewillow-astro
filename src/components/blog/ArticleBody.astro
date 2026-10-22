@@ -1,0 +1,508 @@
+<section class="px-8 max-sm:px-4 tablet:pb-32 pb-12 tablet:pt-16 pt-4">
+          <div class="max-w-90rem mx-auto w-full">
+            <div class="max-w-[71.375rem] mx-auto">
+              <div class="flex items-start justify-start">
+                <div class="max-w-[56.25rem] w-full">
+                  <div class="mb-8 text-brand-espresso-300">
+                    <h2
+                      class="leading-[1.2] tracking-[-.06rem] tablet:pb-16 pb-[1.75rem] border-b border-brand-espresso-300 text-[2rem] max-sm:text-[1rem]"
+                    >
+                      A crew bonus plan that pays $50 per hour saved, gated by
+                      daily logs and zero callbacks. See how an outdoor living
+                      company is building it on JobTread.
+                    </h2>
+                  </div>
+                  <h2
+                    class="font-heading font-medium leading-[1.19524] tracking-[-.03em] tablet:mb-12 mb-6 text-[2.625rem] max-sm:text-[1.5rem]"
+                  >
+                    A crew bonus plan starts with one question: how long should
+                    this job take?
+                  </h2>
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    A good crew bonus plan answers a simple question before
+                    anyone swings a hammer: how many hours should this job take?
+                    Once you have that number, you can pay the crew for beating
+                    it. The catch is that most small contractors never write the
+                    number down in a form the payroll system can read, and that
+                    is where a lot of well-meant bonus ideas stall.
+                  </p>
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    An outdoor living company with three field crews is working
+                    through exactly this right now. The owners want crews that
+                    finish jobs efficiently and document their work, and they
+                    want to understand true labor cost and overhead on every
+                    project. Their field teams are small, two or three people
+                    each, and they run their jobs on JobTread. This post walks
+                    through the plan they settled on, the gates they added so it
+                    cannot be gamed, and the data gaps they hit on the first
+                    review. The plan is still being validated, so this is a look
+                    at the design work, not a victory lap.
+                  </p>
+                  <h2
+                    class="font-heading font-medium leading-[1.19524] tracking-[-.03em] tablet:mb-12 mb-6 text-[2.625rem] max-sm:text-[1.5rem]"
+                  >
+                    The plan: $50 for every hour the crew saves
+                  </h2>
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    The structure they chose for field workers is a fixed award
+                    based on hours saved. Each completed job has a budgeted
+                    number of labor hours from the bid. If the crew finishes in
+                    fewer hours than budgeted, the company pays
+                    <span class="font-bold">$50 for each hour saved</span>
+                    ,split among the crew that worked the job.
+                  </p>
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    Here is the math on an example job. Say a patio build is
+                    budgeted at 40 labor hours and the crew finishes it in 32.
+                    That leaves 8 hours saved, so the award is $400. A
+                    three-person crew splits that into roughly $133 each. A
+                    two-person crew would take $200 apiece. The crew can see the
+                    reward in plain dollars, and the company only pays when it
+                    has already banked the labor it would have spent.
+                  </p>
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    The flat dollar figure is deliberate. A percentage of job
+                    revenue rewards the crew for selling bigger projects, which
+                    they do not control. A fixed rate per hour saved rewards the
+                    one thing they do control: how efficiently they work. We
+                    compared this kind of approach with other designs in our
+                    guide to
+                    <a class="text-brand-espresso-500" href=""
+                      >bonus structure examples</a
+                    >, and the labor-saved model fits field crews well because
+                    the target is concrete and visible on the job.
+                  </p>
+                  <img
+                    class="rounded-[12px] mt-2 mb-6 w-full"
+                    src="./src/assets/blog-crew-bonus-plan-hours-saved-inline-1.png"
+                    alt=""
+                  />
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    The office side gets a different structure. For
+                    superintendents and office staff, the company discussed a
+                    profit-share style award of about 1% of job revenue. On a
+                    $30,000 job, that would be $300. It is not final, and it
+                    makes sense: the people who schedule, order, and coordinate
+                    do not log hours on site, so a revenue-linked share rewards
+                    the outcome they influence.
+                  </p>
+                  <!-- Blog cta one -->
+                  <div
+                    class="flex items-center justify-start gap-5 rounded-[1.25rem] bg-brand-lemon md:py-8 md:px-6 p-4 md:mb-8 mb-4"
+                  >
+                    <svg
+                      class="md:w-8 w-[1.375rem] flex-none"
+                      width="100%"
+                      viewBox="0 0 33 45"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M32.5968 22.0238L11.5968 44.5238C11.3742 44.7613 11.0805 44.92 10.7598 44.9759C10.4392 45.0318 10.1091 44.9819 9.81931 44.8337C9.52953 44.6855 9.2958 44.4471 9.1534 44.1544C9.01099 43.8618 8.96764 43.5308 9.02989 43.2113L11.7786 29.4619L0.973011 25.4044C0.740945 25.3176 0.533997 25.1747 0.370654 24.9884C0.207311 24.8021 0.0926616 24.5782 0.0369483 24.3368C-0.018765 24.0954 -0.0138066 23.8439 0.05138 23.6048C0.116567 23.3658 0.239951 23.1466 0.410511 22.9669L21.4105 0.466915C21.6331 0.229419 21.9268 0.0707486 22.2474 0.0148468C22.5681 -0.041055 22.8982 0.00884533 23.188 0.157018C23.4777 0.30519 23.7115 0.543594 23.8539 0.836256C23.9963 1.12892 24.0396 1.45995 23.9774 1.77941L21.2211 15.5438L32.0268 19.5957C32.2571 19.6831 32.4624 19.8258 32.6245 20.0114C32.7865 20.197 32.9004 20.4196 32.956 20.6596C33.0116 20.8996 33.0072 21.1496 32.9433 21.3876C32.8793 21.6255 32.7577 21.844 32.5893 22.0238H32.5968Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    <p
+                      class="leading-[1.19524] tracking-[-.045rem] md:text-[22px] text-[1rem]"
+                    >
+                      <span class="font-medium"
+                        >Essential KPI Guide [Free Download]:</span
+                      >
+                      <a href=""
+                        >We put together a guide + template of the top 20
+                        essential KPIs used by thousands of successful
+                        businesses to boost efficiency and increase profits.
+                        <span class="font-bold">Get the guide now →</span></a
+                      >
+                    </p>
+                  </div>
+                  <h2
+                    class="font-heading font-medium leading-[1.19524] tracking-[-.03em] tablet:mb-12 mb-6 text-[2.625rem] max-sm:text-[1.5rem]"
+                  >
+                    Three gates before any award is paid
+                  </h2>
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    A bonus that only checks hours will quietly reward rushed
+                    work. To protect quality, the company set three conditions
+                    that every job must meet before the award pays out:
+                  </p>
+                  <ul
+                    class="leading-[1.2] tracking-[-.045rem] md:mb-16 mb-12 pl-8 md:text-2xl text-[1rem] text-brand-espresso-300 list-disc flex flex-col gap-1"
+                  >
+                    <li>
+                      <span class="font-bold">A submitted daily log.</span> The
+                      log captures the date, the crew or subcontractors on site,
+                      who submitted it, a score, and file uploads. It also tells
+                      the system which crew worked the job, which is how the
+                      award gets split correctly.
+                    </li>
+                    <li>
+                      <span class="font-bold"
+                        >Completion within the budgeted time.</span
+                      >
+                      This is the hours-saved test itself.
+                    </li>
+                    <li>
+                      <span class="font-bold">No callback or rework.</span>
+                      A job that comes back as a warranty visit does not
+                      qualify.
+                    </li>
+                  </ul>
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    Together these turn a simple hours bonus into a
+                    quality-and-documentation bonus. The crew that finishes
+                    early but skips the daily log earns nothing, and so does the
+                    crew that finishes early and leaves a punch-list item the
+                    homeowner has to call about. If you want to see how a
+                    similar trio of rules keeps incentives honest, our story on
+                    <a class="text-brand-espresso-500" href=""
+                      >two install crews with a 20% productivity gap</a
+                    >
+                    shows what happens when the clock, not opinion, decides who
+                    is ahead.
+                  </p>
+                  <h2
+                    class="font-heading font-medium leading-[1.19524] tracking-[-.03em] tablet:mb-12 mb-6 text-[2.625rem] max-sm:text-[1.5rem]"
+                  >
+                    Three gates before any award is paid
+                  </h2>
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    The design was the easy part. The first review of the real
+                    data surfaced three gaps, and each one is common enough that
+                    you should check for it before you launch your own crew
+                    bonus plan.
+                  </p>
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    <span class="font-bold">Budgeted hours were blank.</span>
+                    Labor estimates live in the bids as crew-rate line items,
+                    but those hours were not flowing into the field that the
+                    report compares against actual hours. A bonus based on hours
+                    saved cannot run without the budget side of the equation.
+                    The company is now checking how its labor catalog items,
+                    manual labor entries, and scheduling map into budgeted
+                    hours, and it will not set a go-live date until an example
+                    week reconciles.
+                  </p>
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    <span class="font-bold"
+                      >Actual hours are entered by hand.</span
+                    >
+                    The crews punch in and out through a time clock with GPS
+                    boundaries, but it tracks the employee, not the job. Actual
+                    job hours are keyed in from timesheets, which means a crew
+                    that forgets to clock in understates its hours and
+                    overstates its savings. The company plans manual review in
+                    the meantime. Any plan that pays for time saved is only as
+                    strong as the time record underneath it. For a different way
+                    to tie crew pay to labor, see our
+                  </p>
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    <span class="font-bold"
+                      >Callbacks have no native home.</span
+                    >
+                    JobTread does not have a warranty or callback workflow, and
+                    a closed job cannot be reopened cleanly. So the company
+                    creates a new job with the word warranty in the name.
+                    ShareWillow can then find those jobs, link each one to the
+                    customer's most recent completed job, and mark the original
+                    as a callback. It is a workaround, but a consistent naming
+                    rule is all the plan needs.
+                  </p>
+                  <img
+                    class="rounded-[12px] mt-2 mb-6 w-full"
+                    src="./src/assets/twocrew-bonus-plan-hours-saved-inline-2.png"
+                    alt=""
+                  />
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    One more limit is worth naming. Photo uploads sit behind a
+                    general upload function at the bottom of the daily log, and
+                    they cannot be reported reliably yet. Rather than let photo
+                    compliance block the plan, the company is considering a
+                    separate yes or no field or a manual check. Perfect data can
+                    wait. A rule that is simple and consistent should not.
+                  </p>
+                  <!-- Blog cta Two -->
+                  <div
+                    class="relative bg-brand-lemon rounded-[2.5rem] md:mb-16 mb-8 p-6"
+                  >
+                    <div class="max-w-[27.8125rem] w-full">
+                      <h3
+                        class="font-heading font-medium leading-[1.2] tracking-[-.07875rem] text-[clamp(1.875rem,1.6109rem+1.1268vw,2.625rem)]"
+                      >
+                        Profit sharing <span class="italic">made simple</span>
+                      </h3>
+                      <p
+                        class="leading-[1.2] tracking-[-.03em] text-[clamp(0.875rem,0.7165rem+0.6761vw,1.325rem)] tablet:mb-[8rem] mb-[1.5rem] mt-6"
+                      >
+                        Give your team a stake in the company’s success.
+                        ShareWillow helps you create and manage profit-sharing
+                        programs that motivate employees and drive business
+                        results.
+                      </p>
+                      <a
+                        class="py-[1.25rem] px-[1.5rem] rounded-full inline-flex items-center justify-center text-center bg-brand-espresso-500 text-brand-ivory font-medium leading-[1] text-[clamp(1rem,0.868rem+0.5634vw,1.375rem)] transition-colors duration-[300ms] ease hover:bg-brand-espresso-300"
+                        href="#"
+                        ><span>Get a demo</span></a
+                      >
+                    </div>
+                    <img
+                      class="tablet:absolute bottom-0 right-0 max-w-[18.75rem] select-none max-tablet:max-w-[22rem] max-tablet:mx-auto max-tablet:mt-10 max-tablet:mb-[-24px]"
+                      src="./src/assets/blog-cta-1.png"
+                      alt=""
+                    />
+                  </div>
+                  <h2
+                    class="font-heading font-medium leading-[1.19524] tracking-[-.03em] tablet:mb-12 mb-6 text-[2.625rem] max-sm:text-[1.5rem]"
+                  >
+                    How to set up a crew bonus plan without paying for bad data
+                  </h2>
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    The lesson from this rollout is not the dollar amount. It is
+                    the order of operations. If you want a crew bonus plan that
+                    holds up, build it in this sequence:
+                  </p>
+                  <ol class="list-decimal mt-4 mb-4 pl-6">
+                    <li class="mb-1">
+                      <span class="font-bold">Fix the budget first.</span> Make
+                      sure every job carries a budgeted hours number in a place
+                      your reports can read. No budget, no bonus.
+                    </li>
+                    <li class="mb-1">
+                      <span class="font-bold"
+                        >Decide how you will measure actual hours.</span
+                      >
+                      Job-level time beats a general punch clock. If you cannot
+                      get it yet, plan for a manual review.
+                    </li>
+                    <li class="mb-1">
+                      <span class="font-bold"
+                        >Write the eligibility rules in plain words.</span
+                      >
+                      Daily log, within budget, no callback. Anyone on the crew
+                      should be able to recite them.
+                    </li>
+                    <li class="mb-1">
+                      <span class="font-bold"
+                        >Run an example week before launch.</span
+                      >
+                      Compare what the plan would pay against what you would
+                      have paid by hand, and fix the gaps while the numbers are
+                      still theoretical.
+                    </li>
+                    <li class="mb-1">
+                      <span class="font-bold"
+                        >Pick a rate you can afford at your thinnest
+                        margin.</span
+                      >
+                      <a href="">how to calculate bonus pay</a> shows how to
+                      test a rate before you commit.
+                    </li>
+                  </ol>
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    Crews that see their own number tend to protect it. A
+                    painting company that moved to weekly payouts found its crew
+                    grew without breaking the plan, which we covered in how a
+                    painting company tripled its crew. The point is the same
+                    here: a crew bonus plan works when the reward is close to
+                    the work and the rules are boring. Software like ShareWillow
+                    can pull jobs, daily logs, and time entries into a single
+                    report so the award is calculated from the same record
+                    everyone can see.
+                  </p>
+                  <h2
+                    class="font-heading font-medium leading-[1.19524] tracking-[-.03em] tablet:mb-12 mb-6 text-[2.625rem] max-sm:text-[1.5rem]"
+                  >
+                    Frequently asked questions
+                  </h2>
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    Start with a budgeted number of labor hours for each job,
+                    then pay a fixed amount for each hour the crew saves. This
+                    company uses $50 per hour saved, split among the crew that
+                    worked the job, with eligibility gates for a daily log,
+                    on-time completion, and no callbacks.
+                  </p>
+                  <h3
+                    class="font-heading font-medium leading-[1.2] tracking-[-.07875rem] tablet:mb-12 mb-6 tablet:text-[38px] text-[34px]"
+                  >
+                    Should office staff be included in a crew bonus plan?
+                  </h3>
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    They can be, but with a different measure. People who
+                    coordinate jobs do not log hours on site, so a small share
+                    of job revenue, such as the 1% under discussion here, ties
+                    their reward to the outcome they influence instead of the
+                    crew's hours.
+                  </p>
+                  <h3
+                    class="font-heading font-medium leading-[1.2] tracking-[-.07875rem] tablet:mb-12 mb-6 tablet:text-[38px] text-[34px]"
+                  >
+                    How do you stop a crew from rushing to earn the bonus?
+                  </h3>
+                  <p
+                    class="text-brand-espresso-300 leading-[1.19524] tracking-[-.045rem] md:text-2xl text-[1rem] md:mb-12 mb-6"
+                  >
+                    Add quality gates. Requiring a submitted daily log and no
+                    callback or rework means a crew only earns the award when
+                    the work is documented and holds up after it is done.
+                  </p>
+                  <h2
+                    class="font-heading font-medium leading-[1.19524] tracking-[-.03em] tablet:mb-12 mb-6 text-[2.625rem] max-sm:text-[1.5rem]"
+                  >
+                    Related reading
+                  </h2>
+                  <ul
+                    class="leading-[1.2] tracking-[-.045rem] md:mb-16 mb-12 pl-8 md:text-2xl text-[1rem] text-brand-espresso-300 list-disc flex flex-col gap-1"
+                  >
+                    <li>
+                      <a href=""
+                        >The 20% Productivity Gap Between Two Install Crews
+                        Nobody Could See, Until the Clock Told the Truth</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        >Why One Roofing Company Ditched Team Bonuses for a
+                        Labor-Rate Target</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        >How a Painting Company Tripled Its Crew Without
+                        Breaking Its Bonus Plan</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        >9 Bonus Structure Examples Employees and Employers
+                        Love</a
+                      >
+                    </li>
+                  </ul>
+                  <!-- Blog cta Three -->
+                  <div
+                    class="md:p-12 p-6 md:rounded-[2.5rem] rounded-[1.5rem] bg-brand-lemon"
+                  >
+                    <h2
+                      class="font-heading font-medium leading-[1.2] tracking-[-.03em] md:text-[2.625rem] text-2xl md:mb-32 mb-12"
+                    >
+                      Conclusion
+                    </h2>
+                    <p
+                      class="leading-[1.19524] tracking-[-.045rem] md:text-[22px] text-[1rem]"
+                    >
+                      Pay crews for hours saved only when the budget is real,
+                      the clock is trustworthy, and the work comes with a daily
+                      log and no callback.
+                    </p>
+                  </div>
+                  <!-- Blog cta Four -->
+                  <div
+                    class="flex flex-col items-center bg-brand-ivory md:p-[2.25rem] p-[1.5rem] md:rounded-[2.5rem] rounded-[1.25rem] md:mt-16 mt-4 text-center"
+                  >
+                    <h3
+                      class="font-heading font-medium leading-[1.2] tracking-[-.07875rem] md:text-[2.625rem] text-[1.875rem]"
+                    >
+                      Create incentives that
+                      <span class="italic">drive results</span>
+                    </h3>
+                    <p
+                      class="leading-[1.2] tracking-[-.03em] text=[clamp(0.875rem,0.7165rem+0.6761vw,1.325rem)] md:py-8 py-5"
+                    >
+                      You shouldn't need complex equity plans to align your
+                      team. ShareWillow makes it simple to create transparent
+                      profit-sharing programs that motivate employees and grow
+                      your business.
+                    </p>
+                    <a
+                      class="py-[1.25rem] px-[1.5rem] rounded-full flex items-center justify-center text-center bg-brand-espresso-500 text-brand-ivory font-medium leading-[1] text-[clamp(1rem,0.868rem+0.5634vw,1.375rem)] transition-colors duration-[300ms] ease hover:bg-brand-espresso-300"
+                      href="#"
+                      ><span>See the product</span></a
+                    >
+                    <div class="flex gap-2 items-center md:mt-8 mt-6">
+                      <img
+                        class="max-w-[7.4375rem]"
+                        src="./src/assets/people-badge.png"
+                        alt=""
+                      />
+                      <p class="max-w-[20ch] leading-[1.2]">
+                        Incentive plans to help
+                        <a class="underline" href=""
+                          >small businesses thrive.</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="max-w-[20.4375rem] w-full ml-6 sticky top-12 hidden tablet:block"
+                >
+                  <div class="overflow-hidden rounded-[1.25rem]">
+                    <div class="px-6 pt-6 bg-brand-lemon">
+                      <img
+                        class="rounded-t-lg"
+                        src="./src/assets/bonus-template.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="bg-brand-ivory py-6 px-4">
+                      <p
+                        class="leading-[1.2] tracking-[-.04125rem] mb-5 md:text-[1.1rem] text-[1rem]"
+                      >
+                        "I was able to leverage the knowledge of the ShareWillow
+                        team to learn how other companies were designing their
+                        bonus plans. The template was extremely helpful."
+                      </p>
+                      <div class="my-6 flex gap-2">
+                        <figure class="max-w-[3rem]">
+                          <img src="./src/assets/brian tustin.png" alt="" />
+                        </figure>
+                        <div class="text-[#180600b3]">
+                          <p class="text-[1.125rem] tracking-[-.03375rem]">
+                            Brian Tustin
+                          </p>
+                          <p class="text-[1.125rem] tracking-[-.03375rem]">
+                            Owner, First Rate Movers
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>

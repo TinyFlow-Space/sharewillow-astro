@@ -1,0 +1,281 @@
+<section class="px-8 max-sm:px-4 pt-20 max-sm:pt-8 pb-32 max-sm:pb-6">
+          <div class="max-w-90rem mx-auto w-full">
+            <div
+              class="flex justify-between mb-6 max-sm:mb-[1.125rem] pb-6 border-b border-brand-espresso-300 relative"
+            >
+              <!-- Search Box -->
+              <div class="relative">
+                <input
+                  class="pl-12 py-2 pr-3 min-h-[2.8rem] leading-[1.2] tracking-[-.03375rem] rounded-full bg-brand-ivory focus:outline-none focus:ring-0 focus:border-transparent"
+                  type="text"
+                  id="search"
+                  maxlength="256"
+                  name="search"
+                  placeholder="Search..."
+                />
+                <img
+                  class="absolute left-3 top-1/2 -translate-y-1/2"
+                  src="./src/assets/search-icon.svg"
+                  alt=""
+                />
+              </div>
+              <!-- Filter Button Group -->
+              <div class="tablet:flex gap-1 hidden">
+                <button
+                  type="button"
+                  class="py-2 px-4 leading-[1.2] tracking-[-.03375rem] flex items-center text-brand-espresso-300 bg-brand-ivory transition-all duration-[300ms] ease rounded-full hover:bg-brand-espresso-500 hover:text-brand-ivory cursor-pointer"
+                >
+                  <span>All Articles</span>
+                </button>
+                <button
+                  type="button"
+                  class="py-2 px-4 leading-[1.2] tracking-[-.03375rem] flex items-center text-brand-espresso-300 bg-brand-ivory transition-all duration-[300ms] ease rounded-full hover:bg-brand-espresso-500 hover:text-brand-ivory cursor-pointer"
+                >
+                  <span>Features</span>
+                </button>
+                <button
+                  type="button"
+                  class="py-2 px-4 leading-[1.2] tracking-[-.03375rem] flex items-center text-brand-espresso-300 bg-brand-ivory transition-all duration-[300ms] ease rounded-full hover:bg-brand-espresso-500 hover:text-brand-ivory cursor-pointer"
+                >
+                  <span>Incentives</span>
+                </button>
+                <button
+                  type="button"
+                  class="py-2 px-4 leading-[1.2] tracking-[-.03375rem] flex items-center text-brand-espresso-300 bg-brand-ivory transition-all duration-[300ms] ease rounded-full hover:bg-brand-espresso-500 hover:text-brand-ivory cursor-pointer"
+                >
+                  <span>Profit Sharing</span>
+                </button>
+                <button
+                  type="button"
+                  class="py-2 px-4 leading-[1.2] tracking-[-.03375rem] flex items-center text-brand-espresso-300 bg-brand-ivory transition-all duration-[300ms] ease rounded-full hover:bg-brand-espresso-500 hover:text-brand-ivory cursor-pointer"
+                >
+                  <span>Questions</span>
+                </button>
+                <button
+                  type="button"
+                  class="py-2 px-4 leading-[1.2] tracking-[-.03375rem] flex items-center text-brand-espresso-300 bg-brand-ivory transition-all duration-[300ms] ease rounded-full hover:bg-brand-espresso-500 hover:text-brand-ivory cursor-pointer"
+                >
+                  <span>Tips & Tricks</span>
+                </button>
+              </div>
+              <!-- filter buttons form tablet-->
+              <div class="hidden max-tablet:block">
+                <!-- Filter Toggle Button -->
+                <button
+                  id="filter-toggle-btn"
+                  type="button"
+                  class="px-6 py-2 rounded-full bg-black text-white font-medium hover:bg-neutral-800 transition-colors cursor-pointer"
+                >
+                  Filter
+                </button>
+                <!-- Absolute Filter Dropdown Menu -->
+                <div id="filter-drawer" class="filter-drawer mt-2">
+                  <div
+                    class="bg-brand-ivory rounded-2xl py-2 px-3 shadow-lg flex flex-col gap-2 border border-stone-200"
+                  >
+                    <!-- Selected State -->
+                    <button
+                      type="button"
+                      class="w-full flex items-center justify-between px-4 py-2 rounded-full text-neutral-900 font-medium hover:bg-black/5 transition-colors cursor-pointer"
+                    >
+                      All Articles
+                    </button>
+
+                    <!-- Category Options -->
+                    <button
+                      type="button"
+                      class="w-full flex items-center justify-between px-4 py-2 rounded-full text-neutral-900 font-medium hover:bg-black/5 transition-colors cursor-pointer"
+                    >
+                      <span>Features</span>
+                      <span class="text-lg leading-none">+</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      class="w-full flex items-center justify-between px-4 py-2 rounded-full text-neutral-900 font-medium hover:bg-black/5 transition-colors cursor-pointer"
+                    >
+                      <span>Incentives</span>
+                      <span class="text-lg leading-none">+</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      class="w-full flex items-center justify-between px-4 py-2 rounded-full text-neutral-900 font-medium hover:bg-black/5 transition-colors cursor-pointer"
+                    >
+                      <span>Profit Sharing</span>
+                      <span class="text-lg leading-none">+</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      class="w-full flex items-center justify-between px-4 py-2 rounded-full text-neutral-900 font-medium hover:bg-black/5 transition-colors cursor-pointer"
+                    >
+                      <span>Questions</span>
+                      <span class="text-lg leading-none">+</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      class="w-full flex items-center justify-between px-4 py-2 rounded-full text-neutral-900 font-medium hover:bg-black/5 transition-colors cursor-pointer"
+                    >
+                      <span>Tips & Tricks</span>
+                      <span class="text-lg leading-none">+</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <h2
+                class="leading-[1.2] tracking-[-.03em] text-[clamp(1.125rem,0.9049rem+0.939vw,1.75rem)]"
+              >
+                Featured Articles
+              </h2>
+              <!-- Blog Article Card wrapper -->
+              <div class="flex flex-col gap-16 tablet:mt-5.25rem mt-12">
+                <!-- Blog Article Card -->
+                <article class="group flex max-tablet:flex-col relative">
+                  <div
+                    class="flex flex-col mr-[4.875rem] max-tablet:mr-0 max-tablet:mb-8 max-w-[38.875rem] justify-between items-start tablet:gap-4"
+                  >
+                    <div>
+                      <div
+                        class="bg-brand-lemon rounded-full py-2 px-4 leading-[1.2] tablet:mb-8 mb-6 inline-block"
+                      >
+                        <span>Incentives</span>
+                      </div>
+                      <h3
+                        class="font-heading font-medium leading-[1.2] tracking-[-.07875rem] text-[clamp(2rem,1.868rem+0.5634vw,2.375rem)]"
+                      >
+                        HVAC Installer Bonus: How One Company Set $300 to $1,000
+                        Awards by Job Type Before Its First Payout
+                      </h3>
+                    </div>
+                    <div>
+                      <p
+                        class="leading-[1.2] tracking-[-.045rem] hidden tablet:block text-[22px] text-brand-espresso-300"
+                      >
+                        HVAC installer bonus plan: one company pays $300 to
+                        $1,000 per install by job type, minus labor, split by
+                        hours, and cut its upsell rate from 6% to 3%.
+                      </p>
+                      <div
+                        class="flex items-center gap-2 font-medium text-2xl text-[#180600] mt-8 max-sm:mt-5 group-hover:text-[#746a66]"
+                      >
+                        <div
+                          class="w-6 h-6 flex items-center justify-center rounded-full bg-black text-brand-ivory group-hover:bg-[#746a66]"
+                        >
+                          <svg
+                            width=".75rem"
+                            viewBox="0 0 19 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M16.3294 10.4129L11.0794 15.6629C10.9699 15.7723 10.8215 15.8338 10.6667 15.8338C10.5119 15.8338 10.3634 15.7723 10.254 15.6629C10.1445 15.5534 10.083 15.405 10.083 15.2502C10.083 15.0954 10.1445 14.9469 10.254 14.8375L14.5086 10.5835H3.08333C2.92862 10.5835 2.78025 10.522 2.67085 10.4126C2.56146 10.3032 2.5 10.1549 2.5 10.0002C2.5 9.84545 2.56146 9.69708 2.67085 9.58768C2.78025 9.47829 2.92862 9.41683 3.08333 9.41683H14.5086L10.254 5.16287C10.1445 5.05341 10.083 4.90496 10.083 4.75016C10.083 4.59537 10.1445 4.44691 10.254 4.33745C10.3634 4.228 10.5119 4.1665 10.6667 4.1665C10.8215 4.1665 10.9699 4.228 11.0794 4.33745L16.3294 9.58745C16.3836 9.64163 16.4266 9.70596 16.456 9.77678C16.4854 9.8476 16.5005 9.9235 16.5005 10.0002C16.5005 10.0768 16.4854 10.1527 16.456 10.2235C16.4266 10.2944 16.3836 10.3587 16.3294 10.4129Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                        <span class="text-[0.937rem]">Continue reading</span>
+                      </div>
+                    </div>
+                  </div>
+                  <figure
+                    class="overflow-hidden relative rounded-[1.25rem] tablet:max-w-[42.25rem] max-tablet:w-full tablet:h-[30.375rem]"
+                  >
+                    <img
+                      class="w-full object-cover"
+                      src="./src/assets/technician-lead-generation-bonus-preview.png"
+                      alt=""
+                    />
+                  </figure>
+                  <a
+                    class="after:absolute after:inset-0"
+                    href="./blog-details.html"
+                  >
+                    <span class="sr-only"
+                      >HVAC installer bonus plan: one company pays $300 to
+                      $1,000 per install by job type, minus labor, split by
+                      hours, and cut its upsell rate from 6% to 3%.</span
+                    >
+                  </a>
+                </article>
+                <!-- Blog Article Card -->
+                <article class="group flex max-tablet:flex-col relative">
+                  <div
+                    class="flex flex-col mr-[4.875rem] max-tablet:mr-0 max-tablet:mb-8 max-w-[38.875rem] justify-between items-start tablet:gap-4"
+                  >
+                    <div>
+                      <div
+                        class="bg-brand-lemon rounded-full py-2 px-4 leading-[1.2] tablet:mb-8 mb-6 inline-block"
+                      >
+                        <span>Incentives</span>
+                      </div>
+                      <h3
+                        class="font-heading font-medium leading-[1.2] tracking-[-.07875rem] text-[clamp(2rem,1.868rem+0.5634vw,2.375rem)]"
+                      >
+                        Crew Bonus Plan: How an Outdoor Living Company Is Paying
+                        $50 for Every Hour Its Crews Save
+                      </h3>
+                    </div>
+                    <div>
+                      <p
+                        class="leading-[1.2] tracking-[-.045rem] hidden tablet:block text-[22px] text-brand-espresso-300"
+                      >
+                        A crew bonus plan that pays $50 per hour saved, gated by
+                        daily logs and zero callbacks. See how an outdoor living
+                        company is building it on JobTread.
+                      </p>
+                      <div
+                        class="flex items-center gap-2 font-medium text-2xl text-[#180600] group-hover:text-[#746a66] mt-8 max-sm:mt-5"
+                      >
+                        <div
+                          class="w-6 h-6 flex items-center justify-center rounded-full bg-black text-brand-ivory group-hover:bg-[#746a66]"
+                        >
+                          <svg
+                            width=".75rem"
+                            viewBox="0 0 19 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M16.3294 10.4129L11.0794 15.6629C10.9699 15.7723 10.8215 15.8338 10.6667 15.8338C10.5119 15.8338 10.3634 15.7723 10.254 15.6629C10.1445 15.5534 10.083 15.405 10.083 15.2502C10.083 15.0954 10.1445 14.9469 10.254 14.8375L14.5086 10.5835H3.08333C2.92862 10.5835 2.78025 10.522 2.67085 10.4126C2.56146 10.3032 2.5 10.1549 2.5 10.0002C2.5 9.84545 2.56146 9.69708 2.67085 9.58768C2.78025 9.47829 2.92862 9.41683 3.08333 9.41683H14.5086L10.254 5.16287C10.1445 5.05341 10.083 4.90496 10.083 4.75016C10.083 4.59537 10.1445 4.44691 10.254 4.33745C10.3634 4.228 10.5119 4.1665 10.6667 4.1665C10.8215 4.1665 10.9699 4.228 11.0794 4.33745L16.3294 9.58745C16.3836 9.64163 16.4266 9.70596 16.456 9.77678C16.4854 9.8476 16.5005 9.9235 16.5005 10.0002C16.5005 10.0768 16.4854 10.1527 16.456 10.2235C16.4266 10.2944 16.3836 10.3587 16.3294 10.4129Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                        <span class="text-[0.937rem]">Continue reading</span>
+                      </div>
+                    </div>
+                  </div>
+                  <figure
+                    class="overflow-hidden relative rounded-[1.25rem] tablet:max-w-[42.25rem] max-tablet:w-full tablet:h-[30.375rem]"
+                  >
+                    <img
+                      class="w-full object-cover"
+                      src="./src/assets/crew-bonus-plan-hours-saved-preview.png"
+                      alt=""
+                    />
+                  </figure>
+                  <a
+                    class="after:absolute after:inset-0"
+                    href="./blog-details.html"
+                  >
+                    <span class="sr-only"
+                      >Crew Bonus Plan: How an Outdoor Living Company Is Paying
+                      $50 for Every Hour Its Crews Save</span
+                    >
+                  </a>
+                </article>
+              </div>
+              <div class="tablet:mt-[5.375rem] mt-12 flex justify-center">
+                <a
+                  class="py-[1.25rem] px-[1.5rem] rounded-full flex items-center justify-center text-center bg-brand-espresso-500 text-brand-ivory font-medium leading-[1] text-[clamp(1rem,0.868rem+0.5634vw,1.375rem)] transition-colors duration-[300ms] ease hover:bg-brand-espresso-300"
+                  href="#"
+                  ><span>Load more</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </section>

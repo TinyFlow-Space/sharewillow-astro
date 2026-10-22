@@ -1,0 +1,38 @@
+---
+const { label, home, first = false, itemClass } = Astro.props;
+const menuClass = first
+  ? (home ? 'dropdown-menu hidden group-hover:block group-hover:opacity-100 absolute top-full -left-4 z-50 transition-all duration-200 pt-6' : 'dropdown-menu hidden group-hover:block absolute top-full -left-4 z-50 transition-all duration-200 pt-6')
+  : (home ? 'dropdown-menu hidden group-hover:block group-hover:opacity-100 absolute top-full -left-4 pt-6 z-50' : 'dropdown-menu hidden group-hover:block absolute top-full -left-4 pt-6 z-50');
+const surfaceClass = home
+  ? 'w-72 bg-white rounded-2xl shadow-xl p-3 border border-gray-100 max-h-[80vh] overflow-y-auto custom-scrollbar'
+  : 'w-72 bg-brand-ivory rounded-2xl shadow-xl p-3 border border-gray-100 max-h-[80vh] overflow-y-auto custom-scrollbar';
+---
+<li class={itemClass}>
+<button
+                  type="button"
+                  class="dropdown-toggle flex items-center gap-1.5 hover:text-brand-espresso-300 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-espresso rounded-sm cursor-pointer px-1"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                >
+                  <span>{label}</span>
+                  <svg
+                    class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180"
+                    aria-hidden="true"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+<div class={menuClass}>
+<div class={surfaceClass}>
+<slot />
+</div>
+</div>
+</li>

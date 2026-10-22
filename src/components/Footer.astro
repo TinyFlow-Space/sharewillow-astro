@@ -1,0 +1,59 @@
+---
+import DesktopFooterNavigation from './navigation/DesktopFooterNavigation.astro';
+import MobileFooterNavigation from './navigation/MobileFooterNavigation.astro';
+---
+<footer class="px-8 max-sm:px-4 py-8 bg-brand-lemon">
+        <div class="max-w-90rem mx-auto w-full">
+          <!-- Footer Top -->
+          <div class="flex justify-between">
+            <div class="w-full max-w-[25rem]">
+              <h2
+                class="font-heading font-medium leading-[1.2] tracking-[-.03em] text-[clamp(1.75rem,1.5299rem+0.939vw,2.375rem)]"
+              >
+                ShareWillow Makes Profit Sharing
+                <span class="italic"> Simple</span>
+              </h2>
+            </div>
+            <DesktopFooterNavigation />
+          </div>
+          <!-- Footer Bottom -->
+          <MobileFooterNavigation />
+          <!-- Footer Bottom -->
+          <div class="tablet:mt-[18.125rem] mt-12 flex flex-col gap-6">
+            <img src="./src/assets/footer-logo.svg" alt="" />
+            <div class="flex max-sm:flex-col gap-4">
+              <div
+                class="w-[50%] flex max-sm:w-full max-sm:justify-between gap-2"
+              >
+                <a
+                  href="#"
+                  class="tablet:w-full max-w-[12.5rem] max-sm:max-w-auto leading-[1.2] tracking-[-.0225rem] text-[.75rem]"
+                  ><span>Terms & Conditions</span></a
+                >
+                <a
+                  href="https://www.tinyflow.agency/"
+                  class="leading-[1.2] tracking-[-.0225rem] text-[.75rem] hidden max-sm:block"
+                  ><span>Rebuild by Tinyflow -</span></a
+                >
+                <a
+                  href="#"
+                  class="leading-[1.2] tracking-[-.0225rem] text-[.75rem]"
+                  ><span>Privacy Policy</span></a
+                >
+              </div>
+              <div
+                class="w-[50%] flex justify-between max-sm:justify-center max-sm:w-full gap-2"
+              >
+                <a
+                  href="https://www.tinyflow.agency/"
+                  class="leading-[1.2] tracking-[-.0225rem] text-[.75rem] hidden sm:block"
+                  ><span>Rebuild by Tinyflow -</span></a
+                >
+                <div class="leading-[1.2] tracking-[-.0225rem] text-[.75rem]">
+                  © Copyright 2026 ShareWillow. All rights reserved.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>

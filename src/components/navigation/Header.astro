@@ -1,0 +1,91 @@
+---
+import DesktopNavigation from './DesktopNavigation.astro';
+import MobileNavigation from './MobileNavigation.astro';
+const { page } = Astro.props;
+const home = page === 'index';
+const blog = page === 'blog';
+---
+<header
+        id="main-header"
+        class={home ? 'nav-component fixed lg:top-4 lg:pt-0 pt-6 inset-x-0 z-50 w-full px-4 sm:px-6' : 'nav-component fixed lg:top-4 lg:pt-0 pt-6 inset-x-0 z-50 w-full px-4 sm:px-7'}
+        role="banner"
+      >
+        <div
+          class={home ? 'max-w-90rem mx-auto bg-white rounded-[1.25rem] lg:py-4 lg:px-[18px] py-2 px-3 flex items-center justify-between relative z-50 shadow-[0_2px_8px_rgba(0,0,0,0.06)]' : 'max-w-90rem mx-auto bg-brand-ivory rounded-[1.25rem] lg:py-4 lg:px-[18px] py-2 px-3 flex items-center justify-between relative z-50'}
+        >
+          <!-- LOGO -->
+          <div class="flex items-center">
+            <a
+              href="./"
+              aria-label="ShareWillow Home"
+              class="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-espresso rounded-sm lg:max-w-[182px] max-w-[156px]"
+            >
+              <img
+                src="./src/assets/Logo.svg"
+                alt="ShareWillow Logo"
+                width="140"
+                height="28"
+                decoding="async"
+                class="h-6 md:h-7 w-auto object-contain"
+              />
+            </a>
+          </div>
+
+          <!-- DESKTOP NAVIGATION MENU (Visible > 991px) -->
+          <DesktopNavigation home={home} blog={blog} />
+
+          <!-- DESKTOP CTA BUTTONS (Hidden <= 991px) -->
+          <div class="hidden nav-desktop:flex items-center gap-3">
+            <a
+              href="/login"
+              class="bg-brand-lemon leading-[1] tracking-[-.03375rem] text-black px-5 py-3 rounded-full hover:bg-brand-light-lemon transition-all h-[2.875rem] flex items-center"
+              >Sign in</a
+            >
+            <a
+              href="/signup"
+              class="bg-brand-espresso-500 leading-[1] tracking-[-.03375rem] px-5 py-3 rounded-full hover:bg-brand-espresso-300 transition-all text-white h-[2.875rem] flex items-center"
+              >Sign Up Now</a
+            >
+          </div>
+
+          <!-- HAMBURGER / CLOSE BUTTON (Visible <= 991px) -->
+          <button
+            id="mobile-menu-btn"
+            type="button"
+            class="nav-desktop:hidden bg-black text-white w-10 h-10 rounded-full flex items-center justify-center focus:outline-none cursor-pointer"
+            aria-label="Toggle Mobile Menu"
+            aria-expanded="false"
+          >
+            <svg
+              id="hamburger-icon"
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <svg
+              id="close-icon"
+              class="w-5 h-5 hidden"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+
+<MobileNavigation />
+</header>
