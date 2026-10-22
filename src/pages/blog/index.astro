@@ -1,0 +1,20 @@
+---
+import SiteLayout from "@/layouts/SiteLayout.astro";
+import Metadata from "@/components/metadata/blog.astro";
+import CallToAction from "@/components/CallToAction.astro";
+import BlogHero from "@/components/blog/BlogHero.astro";
+import FeaturedArticles from "@/components/blog/FeaturedArticles.astro";
+import LatestArticles from "@/components/blog/LatestArticles.astro";
+---
+
+<SiteLayout page="blog">
+  <Metadata slot="head" />
+
+  <BlogHero />
+  <FeaturedArticles />
+  <LatestArticles />
+  <CallToAction />
+</SiteLayout>
+<script>
+  import "@/scripts/entries/blog.js";
+</script>

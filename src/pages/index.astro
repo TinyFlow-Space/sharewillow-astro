@@ -1,28 +1,28 @@
 ---
-import SiteLayout from '@/layouts/SiteLayout.astro';
-import Metadata from '@/components/metadata/index.astro';
-import CallToAction from '@/components/CallToAction.astro';
-import Hero from '@/components/home/Hero.astro';
-import OwnerBenefits from '@/components/home/OwnerBenefits.astro';
-import PlanBenefits from '@/components/home/PlanBenefits.astro';
-import Motivation from '@/components/home/Motivation.astro';
-import Testimonials from '@/components/home/Testimonials.astro';
-import Process from '@/components/home/Process.astro';
-import IndustriesPricing from '@/components/home/IndustriesPricing.astro';
+import SiteLayout from "@/layouts/SiteLayout.astro";
+import Metadata from "@/components/metadata/index.astro";
+import CallToAction from "@/components/CallToAction.astro";
+import Hero from "@/components/home/Hero.astro";
+import OwnerBenefits from "@/components/home/OwnerBenefits.astro";
+import PlanBenefits from "@/components/home/PlanBenefits.astro";
+import Motivation from "@/components/home/Motivation.astro";
+import Testimonials from "@/components/home/Testimonials.astro";
+import Process from "@/components/home/Process.astro";
+import IndustriesPricing from "@/components/home/IndustriesPricing.astro";
 ---
+
 <SiteLayout page="index">
-<Metadata slot="head" />
-<main id="main-content">
-        <Hero />
-        <OwnerBenefits />
-        <PlanBenefits />
-        <Motivation />
-        <Testimonials />
-        <Process />
-        <IndustriesPricing />
-        <CallToAction />
-      </main>
+  <Metadata slot="head" />
+
+  <Hero />
+  <OwnerBenefits />
+  <PlanBenefits />
+  <Motivation />
+  <Testimonials />
+  <Process />
+  <IndustriesPricing />
+  <CallToAction />
 </SiteLayout>
 <script>
-import "@/scripts/entries/home.js";
+  import "@/scripts/entries/home.js";
 </script>

@@ -8,6 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "astro": "astro",
     "test:parity": "node tests/parity.mjs"
   },
@@ -23,5 +25,8 @@
   "allowScripts": {
     "esbuild": true
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "prettier": "^3.9.10",
+    "prettier-plugin-astro": "^1.1.1"
+  }
 }
